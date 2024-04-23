@@ -9,4 +9,4 @@ def hello_microservice():
 	return jsonify(message)
 
 if __name__ == "__main__":
-	app.run(port=8000)
+	app.run(port=8001)
