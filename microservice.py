@@ -1,12 +1,8 @@
 # from flask import Flask, jsonify
-from flask import Flask, jsonify, abort, make_response, request, url_for
-import random
+from flask import Flask
 app = Flask(__name__)
 
-@app.route("/", methods=['GET'])
+@app.route("/")
 def hello_microservice():
-	message = {"message": "Hello from the microservice! This is Tanmayee"}
-	return jsonify(message)
-
-if __name__ == "__main__":
-	app.run(port=8000)
+	# message = {"message": "Hello from the microservice! This is Tanmayee"}
+	return "<p>Hello World</p>"
